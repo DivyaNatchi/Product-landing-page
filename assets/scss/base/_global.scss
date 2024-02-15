@@ -1,0 +1,6 @@
+@use "../abstract/variables" as var;
+
+.color-anim {
+  transition: 500ms;
+  animation: color-change 10s infinite;
+}

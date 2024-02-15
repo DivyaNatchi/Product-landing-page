@@ -1,3 +1,14 @@
-* {
-  background-color: lightcyan;
-}
+//base
+@import "./base/_reset";
+
+//utilities
+@import "./utilities/animations";
+
+//global
+@import "./base/global";
+
+//components
+@import "./components/buttons";
+
+//components
+@import "./layouts/header";

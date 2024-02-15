@@ -1,5 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800&display=swap");
 * {
-  background-color: lightcyan;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+@keyframes color-change {
+  0% {
+    color: red;
+  }
+  50% {
+    color: blue;
+  }
+  100% {
+    color: green;
+  }
+}
+.color-anim {
+  transition: 500ms;
+  animation: color-change 10s infinite;
+}
+
+.btn {
+  padding: 0.8rem 1.6rem;
+  display: inline-block;
+  border-radius: 5px;
+  line-height: 1;
+  font-size: 0.9rem;
+  font-weight: 600;
+  background-color: #3f43fd;
+  border: none;
+  outline: none;
+  transition: 200ms;
+}
+.btn-primary {
+  color: #fff;
+}
+.btn:hover {
+  background-color: #3135e8;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 30rem;
+  border-bottom: 1px solid #eee;
+}
+.header span {
+  font-size: 14px;
+}
+.header--menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+.header--menu__item > a {
+  margin-right: 1.5rem;
+  font-size: 14px;
+  font-weight: 600;
+  color: #242424;
+  transition: 200ms;
+}
+.header--menu__item > a:hover {
+  color: #3f43fd;
+}
+.header--menu__item > a.active {
+  color: #3f43fd;
 }
 
 /*# sourceMappingURL=styles.css.map */

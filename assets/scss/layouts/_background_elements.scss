@@ -1,0 +1,140 @@
+@use "../abstract/functions" as func;
+
+.background-shapes {
+  .box1 {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border: 2px solid func.theme-colors();
+    border-radius: 0.3rem;
+    z-index: -1;
+    transform: rotate(360deg);
+    animation: box-shape linear 1s infinite;
+  }
+
+  .box2 {
+    position: absolute;
+    top: 80%;
+    left: 60%;
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border: 2px solid func.theme-colors();
+    border-radius: 0.3rem;
+    z-index: -1;
+    transform: rotate(360deg);
+    animation: box-shape linear 1s infinite;
+  }
+
+  .box3 {
+    position: absolute;
+    top: 30%;
+    left: 90%;
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border: 2px solid func.theme-colors();
+    border-radius: 0.3rem;
+    z-index: -1;
+    transform: rotate(360deg);
+    animation: box-shape linear 1s infinite;
+  }
+  .dot1 {
+    position: absolute;
+    top: 90%;
+    right: 30%;
+    width: 8px;
+    height: 8px;
+    background-color: func.theme-colors();
+    border-radius: 50%;
+    z-index: -1;
+    transform: rotate(360deg);
+    animation: box-shape linear 1s infinite;
+  }
+  .dot2 {
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    width: 8px;
+    height: 8px;
+    background-color: #ff43fd;
+    border-radius: 50%;
+    z-index: -1;
+    transform: rotate(360deg);
+    animation: box-shape linear 1s infinite;
+  }
+  .dot3 {
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    width: 8px;
+    height: 8px;
+    background-color: #f5a556;
+    border-radius: 50%;
+    z-index: -1;
+    transform: rotate(360deg);
+    animation: box-shape linear 1s infinite;
+  }
+  .dot4 {
+    position: absolute;
+    top: 70%;
+    right: 10%;
+    width: 8px;
+    height: 8px;
+    background-color: #91ec91;
+    border-radius: 50%;
+    z-index: -1;
+    transform: rotate(360deg);
+    animation: box-shape linear 1s infinite;
+  }
+  .heart1 {
+    position: absolute;
+    font-size: 1.5rem;
+    top: 50%;
+    left: 15%;
+    z-index: -1;
+    color: #ff0000;
+    animation: box-shape linear 1s infinite;
+  }
+
+  .heart2 {
+    position: absolute;
+    font-size: 1.5rem;
+    top: 60%;
+    right: 5%;
+    z-index: -1;
+    color: #ff0000;
+    animation: box-shape linear 1s infinite;
+  }
+
+  .circle1 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border: 3px solid #ff0000;
+    border-radius: 50%;
+    z-index: -1;
+    transform: rotate(360deg);
+    animation: box-shape linear 1s infinite;
+  }
+
+  .circle2 {
+    position: absolute;
+    top: 85%;
+    left: 30%;
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border: 3px solid #000;
+    border-radius: 50%;
+    z-index: -1;
+    transform: rotate(360deg);
+    animation: box-shape linear 1s infinite;
+  }
+}

@@ -1,6 +1,17 @@
 @use "../abstract/variables" as var;
 
+.text-uppercase {
+  text-transform: uppercase;
+}
 .color-anim {
   transition: 500ms;
   animation: color-change 10s infinite;
+}
+
+.line {
+  background: linear-gradient(to right, #e95971, #4141e4);
+  width: 5rem;
+  height: 0.5rem;
+  border-radius: 6px;
+  margin: 30px auto;
 }

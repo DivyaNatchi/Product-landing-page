@@ -1,0 +1,24 @@
+@use "../abstract/variables" as var;
+@use "../abstract/functions" as func;
+
+.about-area {
+  padding: 8rem 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: func.theme-colors();
+
+  &--img {
+    width: 44rem;
+  }
+  &--desc {
+    color: func.theme-colors("white");
+    h2 {
+      font-size: 3rem;
+    }
+    p {
+      line-height: 2;
+      color: func.theme-colors("about-gray");
+    }
+  }
+}

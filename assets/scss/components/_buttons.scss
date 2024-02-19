@@ -8,16 +8,29 @@
   line-height: 1;
   font-size: 0.9rem;
   font-weight: 600;
-  background-color: func.theme-colors();
   border: none;
   outline: none;
   transition: 200ms;
 
   &-primary {
+    @extend .btn;
+    background-color: func.theme-colors();
     color: #fff;
+
+    &:hover {
+      background-color: func.theme-colors("primary-hover");
+    }
   }
 
-  &:hover {
-    background-color: func.theme-colors("primary-hover");
+  &-outlined {
+    @extend .btn;
+    background-color: #fff;
+    border: 2px solid func.theme-colors();
+    color: func.theme-colors();
+
+    &:hover {
+      background-color: func.theme-colors("primary-hover");
+      color: #fff;
+    }
   }
 }

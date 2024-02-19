@@ -1,6 +1,12 @@
+@use "../abstract/mixins" as mixins;
+
 .contact {
   padding: 8rem 20rem;
   background-color: #f1f1f1;
+
+  @include mixins.responsive(xs) {
+    padding: 4rem 2rem;
+  }
 
   &-card {
     background-color: white;
@@ -10,14 +16,29 @@
     align-items: center;
     border-radius: 0.5rem;
 
+    @include mixins.responsive(xs) {
+      flex-direction: column;
+      padding: 2rem;
+      align-items: initial;
+      button {
+        display: block;
+        width: 100%;
+      }
+    }
+
     &--content {
       flex-grow: 1;
 
       h2 {
         font-size: 1.2rem;
+
+        @include mixins.responsive(xs) {
+          font-size: 1rem;
+        }
       }
       p {
         color: gray;
+        font-size: 0.8rem;
       }
     }
   }

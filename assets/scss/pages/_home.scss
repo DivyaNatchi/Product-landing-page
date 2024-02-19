@@ -1,21 +1,49 @@
+@use "../abstract/mixins" as mixins;
+
 .hero-area {
   padding: 8rem 20rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
 
+  @include mixins.responsive(xs) {
+    padding: 4rem 2rem;
+    flex-direction: column;
+    button {
+      display: block;
+      margin: 1rem 0;
+      width: 100%;
+    }
+  }
+
   &--contents {
     max-width: 36rem;
+
+    @include mixins.responsive(xs) {
+      h2 > span {
+        font-size: 1rem;
+        padding: 2px 5px;
+        font-weight: 400;
+      }
+    }
   }
 
   &--title {
     font-size: 3rem;
     font-weight: 600;
+
+    @include mixins.responsive(xs) {
+      font-size: 2rem;
+    }
   }
   &--desc {
     margin-top: 2rem;
     font-size: 1.2rem;
     line-height: 1.8;
     color: gray;
+
+    @include mixins.responsive(xs) {
+      font-size: 1rem;
+    }
   }
 }

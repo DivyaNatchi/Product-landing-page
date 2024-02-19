@@ -1,5 +1,6 @@
 @use "../abstract/variables" as var;
 @use "../abstract/functions" as func;
+@use "../abstract/mixins" as mixins;
 
 .about-area {
   padding: 8rem 20rem;
@@ -7,18 +8,39 @@
   justify-content: center;
   align-items: center;
   background-color: func.theme-colors();
+  margin-top: 11rem;
+
+  @include mixins.responsive(xs) {
+    padding: 4rem 2rem;
+    flex-direction: column;
+    margin-top: 0;
+  }
 
   &--img {
     width: 44rem;
+    @include mixins.responsive(xs) {
+      width: 100%;
+    }
   }
   &--desc {
     color: func.theme-colors("white");
+    @include mixins.responsive(xs) {
+      margin: 0;
+    }
+
     h2 {
       font-size: 3rem;
+
+      @include mixins.responsive(xs) {
+        font-size: 2rem;
+      }
     }
     p {
       line-height: 2;
       color: func.theme-colors("about-gray");
+      @include mixins.responsive(xs) {
+        font-size: 1rem;
+      }
     }
   }
 }

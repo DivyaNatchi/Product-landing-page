@@ -27,6 +27,11 @@ a {
   margin: 30px auto;
 }
 
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
+
 .btn, .btn-outlined, .btn-primary {
   padding: 0.8rem 1.6rem;
   display: inline-block;
@@ -87,6 +92,20 @@ a {
   padding: 1rem 20rem;
   border-bottom: 1px solid #eee;
 }
+@media only screen and (max-width: 576px) {
+  .header {
+    padding: 1rem 2rem;
+  }
+}
+.header .nav-toggler {
+  display: none;
+}
+@media only screen and (max-width: 576px) {
+  .header .nav-toggler {
+    display: block;
+    font-size: 1.3rem;
+  }
+}
 .header span {
   font-size: 14px;
 }
@@ -94,6 +113,11 @@ a {
   list-style: none;
   display: flex;
   align-items: center;
+}
+@media only screen and (max-width: 576px) {
+  .header--menu {
+    display: none;
+  }
 }
 .header--menu__item > a {
   margin-right: 1.5rem;
@@ -118,8 +142,18 @@ footer {
 footer h2 {
   font-size: 1.2rem;
 }
+@media only screen and (max-width: 576px) {
+  footer h2 {
+    font-size: 1rem;
+  }
+}
 footer p {
   color: #e8e8e8;
+}
+@media only screen and (max-width: 576px) {
+  footer p {
+    font-size: 0.8rem;
+  }
 }
 footer a {
   color: #fff;
@@ -139,7 +173,17 @@ footer .social-icons > a > i:hover {
 footer .legal {
   font-size: 0.9rem;
 }
+@media only screen and (max-width: 576px) {
+  footer .legal {
+    font-size: 0.7rem;
+  }
+}
 
+@media only screen and (max-width: 576px) {
+  .background-shapes {
+    display: none;
+  }
+}
 .background-shapes .box1 {
   position: absolute;
   top: 20%;
@@ -937,18 +981,46 @@ footer .legal {
   justify-content: space-around;
   align-items: center;
 }
+@media only screen and (max-width: 576px) {
+  .hero-area {
+    padding: 4rem 2rem;
+    flex-direction: column;
+  }
+  .hero-area button {
+    display: block;
+    margin: 1rem 0;
+    width: 100%;
+  }
+}
 .hero-area--contents {
   max-width: 36rem;
+}
+@media only screen and (max-width: 576px) {
+  .hero-area--contents h2 > span {
+    font-size: 1rem;
+    padding: 2px 5px;
+    font-weight: 400;
+  }
 }
 .hero-area--title {
   font-size: 3rem;
   font-weight: 600;
+}
+@media only screen and (max-width: 576px) {
+  .hero-area--title {
+    font-size: 2rem;
+  }
 }
 .hero-area--desc {
   margin-top: 2rem;
   font-size: 1.2rem;
   line-height: 1.8;
   color: gray;
+}
+@media only screen and (max-width: 576px) {
+  .hero-area--desc {
+    font-size: 1rem;
+  }
 }
 
 .about-area {
@@ -957,23 +1029,56 @@ footer .legal {
   justify-content: center;
   align-items: center;
   background-color: #3f43fd;
+  margin-top: 11rem;
+}
+@media only screen and (max-width: 576px) {
+  .about-area {
+    padding: 4rem 2rem;
+    flex-direction: column;
+    margin-top: 0;
+  }
 }
 .about-area--img {
   width: 44rem;
 }
+@media only screen and (max-width: 576px) {
+  .about-area--img {
+    width: 100%;
+  }
+}
 .about-area--desc {
   color: #fff;
 }
+@media only screen and (max-width: 576px) {
+  .about-area--desc {
+    margin: 0;
+  }
+}
 .about-area--desc h2 {
   font-size: 3rem;
+}
+@media only screen and (max-width: 576px) {
+  .about-area--desc h2 {
+    font-size: 2rem;
+  }
 }
 .about-area--desc p {
   line-height: 2;
   color: #cfcfcf;
 }
+@media only screen and (max-width: 576px) {
+  .about-area--desc p {
+    font-size: 1rem;
+  }
+}
 
 .roadmap {
   padding: 8rem 20rem;
+}
+@media only screen and (max-width: 576px) {
+  .roadmap {
+    padding: 4rem 2rem;
+  }
 }
 .roadmap--heading {
   text-align: center;
@@ -983,6 +1088,11 @@ footer .legal {
   justify-content: center;
   align-items: center;
   margin-top: 3rem;
+}
+@media only screen and (max-width: 576px) {
+  .roadmap--items {
+    flex-direction: column;
+  }
 }
 .roadmap--item {
   padding: 3rem;
@@ -1033,7 +1143,15 @@ footer .legal {
   font-weight: 600;
   font-size: 3rem;
   color: #020712;
+  line-height: 1;
   z-index: 1;
+}
+@media only screen and (max-width: 576px) {
+  .roadmap--item:not(:last-child)::before {
+    content: "\f107";
+    top: 100%;
+    left: 40%;
+  }
 }
 .roadmap--item:hover:not(:last-child)::before {
   color: #3f43fd;
@@ -1053,19 +1171,42 @@ footer .legal {
   background-color: #3f43fd;
   padding: 8rem 20rem;
 }
+@media only screen and (max-width: 576px) {
+  .courses {
+    padding: 4rem 2rem;
+  }
+}
 .courses--heading {
   text-align: center;
 }
 .courses--heading h2 {
   color: #fff;
-  font-size: 2rem;
+  font-size: 3rem;
+  padding-top: 11rem;
+}
+@media only screen and (max-width: 576px) {
+  .courses--heading h2 {
+    font-size: 2rem;
+    padding-top: 0;
+  }
 }
 .courses--heading p {
   color: #fff;
+  font-size: 2rem;
+}
+@media only screen and (max-width: 576px) {
+  .courses--heading p {
+    font-size: 1rem;
+  }
 }
 .courses-cards {
   display: flex;
   justify-content: space-around;
+}
+@media only screen and (max-width: 576px) {
+  .courses-cards {
+    flex-direction: column;
+  }
 }
 .courses-card {
   background-color: #fff;
@@ -1093,6 +1234,12 @@ footer .legal {
 .courses--info {
   text-align: center;
   color: rgb(245, 245, 245);
+  margin-top: 3rem;
+}
+@media only screen and (max-width: 576px) {
+  .courses--info {
+    margin-top: 0;
+  }
 }
 .courses--info a {
   color: #fff;
@@ -1105,6 +1252,11 @@ footer .legal {
   padding: 8rem 20rem;
   background-color: #f1f1f1;
 }
+@media only screen and (max-width: 576px) {
+  .contact {
+    padding: 4rem 2rem;
+  }
+}
 .contact-card {
   background-color: white;
   padding: 2rem 3rem;
@@ -1113,14 +1265,31 @@ footer .legal {
   align-items: center;
   border-radius: 0.5rem;
 }
+@media only screen and (max-width: 576px) {
+  .contact-card {
+    flex-direction: column;
+    padding: 2rem;
+    align-items: initial;
+  }
+  .contact-card button {
+    display: block;
+    width: 100%;
+  }
+}
 .contact-card--content {
   flex-grow: 1;
 }
 .contact-card--content h2 {
   font-size: 1.2rem;
 }
+@media only screen and (max-width: 576px) {
+  .contact-card--content h2 {
+    font-size: 1rem;
+  }
+}
 .contact-card--content p {
   color: gray;
+  font-size: 0.8rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

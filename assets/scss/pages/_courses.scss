@@ -1,23 +1,42 @@
 @use "../abstract/variables" as var;
 @use "../abstract/functions" as func;
+@use "../abstract/mixins" as mixins;
 
 .courses {
   background-color: func.theme-colors();
   padding: 8rem 20rem;
 
+  @include mixins.responsive(xs) {
+    padding: 4rem 2rem;
+  }
+
   &--heading {
     text-align: center;
     h2 {
       color: func.theme-colors("white");
-      font-size: 2rem;
+      font-size: 3rem;
+      padding-top: 11rem;
+
+      @include mixins.responsive(xs) {
+        font-size: 2rem;
+        padding-top: 0;
+      }
     }
     p {
       color: func.theme-colors("white");
+      font-size: 2rem;
+      @include mixins.responsive(xs) {
+        font-size: 1rem;
+      }
     }
   }
   &-cards {
     display: flex;
     justify-content: space-around;
+
+    @include mixins.responsive(xs) {
+      flex-direction: column;
+    }
   }
   &-card {
     background-color: func.theme-colors("white");
@@ -50,6 +69,11 @@
   &--info {
     text-align: center;
     color: rgb(245, 245, 245);
+    margin-top: 3rem;
+
+    @include mixins.responsive(xs) {
+      margin-top: 0;
+    }
 
     a {
       color: func.theme-colors("white");

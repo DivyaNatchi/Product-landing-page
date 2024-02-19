@@ -29,13 +29,20 @@
       <div>
         <h2>Webdesign<span class="color-anim"> NEW!</span></h2>
       </div>
-      <ul class="header--menu text-uppercase">
-        <li class="header--menu__item"><a href="#" class="active">Home</a></li>
-        <li class="header--menu__item"><a href="#">About</a></li>
-        <li class="header--menu__item"><a href="#">Roadmap</a></li>
-        <li class="header--menu__item"><a href="#">courses</a></li>
-        <li><a href="#" class="btn-primary">contact us</a></li>
-      </ul>
+      <div>
+        <div class="nav-toggler">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <ul class="header--menu text-uppercase">
+          <li class="header--menu__item">
+            <a href="#" class="active">Home</a>
+          </li>
+          <li class="header--menu__item"><a href="#">About</a></li>
+          <li class="header--menu__item"><a href="#">Roadmap</a></li>
+          <li class="header--menu__item"><a href="#">courses</a></li>
+          <li><a href="#" class="btn-primary">contact us</a></li>
+        </ul>
+      </div>
     </header>
     <!-- ========== End header section========== -->
 
@@ -83,6 +90,7 @@
           <img
             src="./assets/img/web-design-illustration.png"
             alt="web design illustration"
+            class="img-responsive"
           />
         </div>
       </section>
@@ -90,14 +98,15 @@
 
       <!-- ========== Start About area section ========== -->
 
-      <section class="about-area mt-10 space-x-4">
-        <div class="about-area--img">
+      <section class="about-area space-x-4 space-y-4">
+        <div>
           <img
             src="./assets/img/web-development-illustration.png"
             alt="Web development illustration"
+            class="img-responsive about-area--img"
           />
         </div>
-        <div class="about-area--desc">
+        <div class="about-area--desc space-y-1">
           <h2>Never stop learning:</h2>
           <p>
             Learning is never ending. It’s a lifestyle. Especially in
@@ -141,7 +150,6 @@
             </div>
           </div>
           <div class="roadmap--item">
-            -u
             <div class="roadmap--item__img">
               <img src="./assets/img/technologies/js-logo.jpg" alt="JS logo" />
             </div>
@@ -156,7 +164,7 @@
       <!-- ========== Start courses sections ========== -->
       <section class="courses">
         <div class="courses--heading space-y-1 mb-3">
-          <h2 class="pt-10">Free Courses to Enroll</h2>
+          <h2>Free Courses to Enroll</h2>
           <p>Start from beginning, no pre-requesties required.</p>
         </div>
         <div class="courses-cards space-y-2">
@@ -228,7 +236,7 @@
             >
           </div>
         </div>
-        <div class="courses--info mt-3">
+        <div class="courses--info">
           <p>
             For more courses, visit
             <a href="https://cyberdudenetworks.com" target="_blank"
@@ -291,7 +299,11 @@
             </div>
           </form>
           <div>
-            <img src="./assets/img/contact.png" alt="Contact us" />
+            <img
+              src="./assets/img/contact.png"
+              alt="Contact us"
+              class="img-responsive"
+            />
           </div>
         </div>
       </section>
@@ -307,7 +319,7 @@
             >
           </p>
         </div>
-        <div class="social-icons">
+        <div class="social-icons mt-1 mb-1">
           <a href="https://www.facebook.com/CdudeNetworks/" target="_blank"
             ><i class="fab fa-facebook"></i
           ></a>

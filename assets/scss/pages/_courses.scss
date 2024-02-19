@@ -1,0 +1,62 @@
+@use "../abstract/variables" as var;
+@use "../abstract/functions" as func;
+
+.courses {
+  background-color: func.theme-colors();
+  padding: 8rem 20rem;
+
+  &--heading {
+    text-align: center;
+    h2 {
+      color: func.theme-colors("white");
+      font-size: 2rem;
+    }
+    p {
+      color: func.theme-colors("white");
+    }
+  }
+  &-cards {
+    display: flex;
+    justify-content: space-around;
+  }
+  &-card {
+    background-color: func.theme-colors("white");
+    max-width: 380px;
+    border-radius: 10px;
+    overflow: hidden;
+
+    &--img {
+      width: 380px;
+    }
+
+    &--body {
+      h4 {
+        color: func.theme-colors("dark");
+        font-size: 1.5rem;
+      }
+      p {
+        color: func.theme-colors("gray");
+        line-height: 1.5;
+      }
+    }
+    a {
+      color: rgba(0, 0, 0, 0.938);
+    }
+    &:hover {
+      box-shadow: 2px 2px 20px 5px rgba(54, 54, 54, 0.5);
+    }
+  }
+
+  &--info {
+    text-align: center;
+    color: rgb(245, 245, 245);
+
+    a {
+      color: func.theme-colors("white");
+
+      &:hover {
+        text-shadow: 2px 2px 10px #fff;
+      }
+    }
+  }
+}

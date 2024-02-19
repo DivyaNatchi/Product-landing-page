@@ -64,6 +64,22 @@ a {
   background-color: #3f43fd;
 }
 
+.input-control {
+  background-color: #f7f7f7;
+  padding: 0.8rem 1.5rem;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+.input-control:focus {
+  border: 2px solid #3f43fd;
+}
+
+.resize-none {
+  resize: none;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -1052,6 +1068,28 @@ a {
 }
 .courses--info a:hover {
   text-shadow: 2px 2px 10px #fff;
+}
+
+.contact {
+  padding: 8rem 20rem;
+  background-color: #f1f1f1;
+}
+.contact-card {
+  background-color: white;
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0.5rem;
+}
+.contact-card--content {
+  flex-grow: 1;
+}
+.contact-card--content h2 {
+  font-size: 1.2rem;
+}
+.contact-card--content p {
+  color: gray;
 }
 
 /*# sourceMappingURL=styles.css.map */

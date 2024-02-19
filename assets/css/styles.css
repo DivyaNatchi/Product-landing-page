@@ -97,10 +97,21 @@ a {
     padding: 1rem 2rem;
   }
 }
+@media only screen and (min-width: 576px) {
+  .header {
+    padding: 1rem 2rem;
+  }
+}
 .header .nav-toggler {
   display: none;
 }
 @media only screen and (max-width: 576px) {
+  .header .nav-toggler {
+    display: block;
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (min-width: 576px) {
   .header .nav-toggler {
     display: block;
     font-size: 1.3rem;
@@ -115,6 +126,11 @@ a {
   align-items: center;
 }
 @media only screen and (max-width: 576px) {
+  .header--menu {
+    display: none;
+  }
+}
+@media only screen and (min-width: 576px) {
   .header--menu {
     display: none;
   }
@@ -147,10 +163,20 @@ footer h2 {
     font-size: 1rem;
   }
 }
+@media only screen and (min-width: 576px) {
+  footer h2 {
+    font-size: 1rem;
+  }
+}
 footer p {
   color: #e8e8e8;
 }
 @media only screen and (max-width: 576px) {
+  footer p {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (min-width: 576px) {
   footer p {
     font-size: 0.8rem;
   }
@@ -174,6 +200,11 @@ footer .legal {
   font-size: 0.9rem;
 }
 @media only screen and (max-width: 576px) {
+  footer .legal {
+    font-size: 0.7rem;
+  }
+}
+@media only screen and (min-width: 576px) {
   footer .legal {
     font-size: 0.7rem;
   }
@@ -225,8 +256,8 @@ footer .legal {
 }
 .background-shapes .dot1 {
   position: absolute;
-  top: 90%;
-  right: 30%;
+  top: 80%;
+  left: 20%;
   width: 8px;
   height: 8px;
   background-color: #3f43fd;
@@ -249,7 +280,7 @@ footer .legal {
 }
 .background-shapes .dot3 {
   position: absolute;
-  top: 80%;
+  top: 60%;
   left: 10%;
   width: 8px;
   height: 8px;
@@ -262,7 +293,7 @@ footer .legal {
 .background-shapes .dot4 {
   position: absolute;
   top: 70%;
-  right: 10%;
+  right: 20%;
   width: 8px;
   height: 8px;
   background-color: #91ec91;
@@ -291,7 +322,7 @@ footer .legal {
 }
 .background-shapes .circle1 {
   position: absolute;
-  top: 10%;
+  top: 25%;
   left: 50%;
   width: 15px;
   height: 15px;
@@ -992,12 +1023,29 @@ footer .legal {
     width: 100%;
   }
 }
+@media only screen and (min-width: 576px) {
+  .hero-area {
+    padding: 4rem 2rem;
+    flex-direction: column;
+  }
+  .hero-area img {
+    width: 25rem;
+    margin-top: 2rem;
+  }
+}
 .hero-area--contents {
   max-width: 36rem;
 }
 @media only screen and (max-width: 576px) {
   .hero-area--contents h2 > span {
     font-size: 1rem;
+    padding: 2px 5px;
+    font-weight: 400;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .hero-area--contents h2 > span {
+    font-size: 0.8rem;
     padding: 2px 5px;
     font-weight: 400;
   }
@@ -1011,6 +1059,11 @@ footer .legal {
     font-size: 2rem;
   }
 }
+@media only screen and (min-width: 576px) {
+  .hero-area--title {
+    font-size: 1.5rem;
+  }
+}
 .hero-area--desc {
   margin-top: 2rem;
   font-size: 1.2rem;
@@ -1020,6 +1073,11 @@ footer .legal {
 @media only screen and (max-width: 576px) {
   .hero-area--desc {
     font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .hero-area--desc {
+    font-size: 0.8rem;
   }
 }
 
@@ -1038,6 +1096,13 @@ footer .legal {
     margin-top: 0;
   }
 }
+@media only screen and (min-width: 576px) {
+  .about-area {
+    padding: 4rem 2rem;
+    flex-direction: column;
+    margin-top: 0;
+  }
+}
 .about-area--img {
   width: 44rem;
 }
@@ -1046,10 +1111,20 @@ footer .legal {
     width: 100%;
   }
 }
+@media only screen and (min-width: 576px) {
+  .about-area--img {
+    width: 30rem;
+  }
+}
 .about-area--desc {
   color: #fff;
 }
 @media only screen and (max-width: 576px) {
+  .about-area--desc {
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 576px) {
   .about-area--desc {
     margin: 0;
   }
@@ -1062,6 +1137,11 @@ footer .legal {
     font-size: 2rem;
   }
 }
+@media only screen and (min-width: 576px) {
+  .about-area--desc h2 {
+    font-size: 1.5rem;
+  }
+}
 .about-area--desc p {
   line-height: 2;
   color: #cfcfcf;
@@ -1071,11 +1151,21 @@ footer .legal {
     font-size: 1rem;
   }
 }
+@media only screen and (min-width: 576px) {
+  .about-area--desc p {
+    font-size: 0.8rem;
+  }
+}
 
 .roadmap {
   padding: 8rem 20rem;
 }
 @media only screen and (max-width: 576px) {
+  .roadmap {
+    padding: 4rem 2rem;
+  }
+}
+@media only screen and (min-width: 576px) {
   .roadmap {
     padding: 4rem 2rem;
   }
@@ -1090,6 +1180,11 @@ footer .legal {
   margin-top: 3rem;
 }
 @media only screen and (max-width: 576px) {
+  .roadmap--items {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 576px) {
   .roadmap--items {
     flex-direction: column;
   }
@@ -1153,6 +1248,13 @@ footer .legal {
     left: 40%;
   }
 }
+@media only screen and (min-width: 576px) {
+  .roadmap--item:not(:last-child)::before {
+    content: "\f107";
+    top: 100%;
+    left: 40%;
+  }
+}
 .roadmap--item:hover:not(:last-child)::before {
   color: #3f43fd;
   right: -12%;
@@ -1176,6 +1278,11 @@ footer .legal {
     padding: 4rem 2rem;
   }
 }
+@media only screen and (min-width: 576px) {
+  .courses {
+    padding: 4rem 2rem;
+  }
+}
 .courses--heading {
   text-align: center;
 }
@@ -1190,6 +1297,12 @@ footer .legal {
     padding-top: 0;
   }
 }
+@media only screen and (min-width: 576px) {
+  .courses--heading h2 {
+    font-size: 1.5rem;
+    padding-top: 0;
+  }
+}
 .courses--heading p {
   color: #fff;
   font-size: 2rem;
@@ -1199,6 +1312,11 @@ footer .legal {
     font-size: 1rem;
   }
 }
+@media only screen and (min-width: 576px) {
+  .courses--heading p {
+    font-size: 0.8rem;
+  }
+}
 .courses-cards {
   display: flex;
   justify-content: space-around;
@@ -1206,6 +1324,12 @@ footer .legal {
 @media only screen and (max-width: 576px) {
   .courses-cards {
     flex-direction: column;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .courses-cards {
+    flex-direction: column;
+    align-items: center;
   }
 }
 .courses-card {
@@ -1241,6 +1365,11 @@ footer .legal {
     margin-top: 0;
   }
 }
+@media only screen and (min-width: 576px) {
+  .courses--info {
+    margin-top: 0;
+  }
+}
 .courses--info a {
   color: #fff;
 }
@@ -1253,6 +1382,11 @@ footer .legal {
   background-color: #f1f1f1;
 }
 @media only screen and (max-width: 576px) {
+  .contact {
+    padding: 4rem 2rem;
+  }
+}
+@media only screen and (min-width: 576px) {
   .contact {
     padding: 4rem 2rem;
   }
@@ -1276,6 +1410,17 @@ footer .legal {
     width: 100%;
   }
 }
+@media only screen and (min-width: 576px) {
+  .contact-card {
+    flex-direction: column;
+    padding: 2rem;
+    align-items: initial;
+  }
+  .contact-card button {
+    display: block;
+    width: 100%;
+  }
+}
 .contact-card--content {
   flex-grow: 1;
 }
@@ -1283,6 +1428,11 @@ footer .legal {
   font-size: 1.2rem;
 }
 @media only screen and (max-width: 576px) {
+  .contact-card--content h2 {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 576px) {
   .contact-card--content h2 {
     font-size: 1rem;
   }

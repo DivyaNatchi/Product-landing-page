@@ -13,10 +13,19 @@ footer {
     @include mixins.responsive(xs) {
       font-size: 1rem;
     }
+
+    @include mixins.responsive(sm) {
+      font-size: 1rem;
+    }
   }
   p {
     color: #e8e8e8;
+
     @include mixins.responsive(xs) {
+      font-size: 0.8rem;
+    }
+
+    @include mixins.responsive(sm) {
       font-size: 0.8rem;
     }
   }
@@ -42,7 +51,12 @@ footer {
 
   .legal {
     font-size: 0.9rem;
+
     @include mixins.responsive(xs) {
+      font-size: 0.7rem;
+    }
+
+    @include mixins.responsive(sm) {
       font-size: 0.7rem;
     }
   }

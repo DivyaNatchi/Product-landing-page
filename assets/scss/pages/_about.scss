@@ -16,15 +16,31 @@
     margin-top: 0;
   }
 
+  @include mixins.responsive(sm) {
+    padding: 4rem 2rem;
+    flex-direction: column;
+    margin-top: 0;
+  }
+
   &--img {
     width: 44rem;
+
     @include mixins.responsive(xs) {
       width: 100%;
+    }
+
+    @include mixins.responsive(sm) {
+      width: 30rem;
     }
   }
   &--desc {
     color: func.theme-colors("white");
+
     @include mixins.responsive(xs) {
+      margin: 0;
+    }
+
+    @include mixins.responsive(sm) {
       margin: 0;
     }
 
@@ -34,12 +50,21 @@
       @include mixins.responsive(xs) {
         font-size: 2rem;
       }
+
+      @include mixins.responsive(sm) {
+        font-size: 1.5rem;
+      }
     }
     p {
       line-height: 2;
       color: func.theme-colors("about-gray");
+
       @include mixins.responsive(xs) {
         font-size: 1rem;
+      }
+
+      @include mixins.responsive(sm) {
+        font-size: 0.8rem;
       }
     }
   }

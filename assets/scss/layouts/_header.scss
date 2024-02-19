@@ -13,10 +13,19 @@
     padding: 1rem 2rem;
   }
 
+  @include mixins.responsive(sm) {
+    padding: 1rem 2rem;
+  }
+
   .nav-toggler {
     display: none;
 
     @include mixins.responsive(xs) {
+      display: block;
+      font-size: 1.3rem;
+    }
+
+    @include mixins.responsive(sm) {
       display: block;
       font-size: 1.3rem;
     }
@@ -32,6 +41,10 @@
     align-items: center;
 
     @include mixins.responsive(xs) {
+      display: none;
+    }
+
+    @include mixins.responsive(sm) {
       display: none;
     }
 

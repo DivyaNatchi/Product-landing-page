@@ -107,6 +107,11 @@ a {
     padding: 1rem 6rem;
   }
 }
+@media only screen and (min-width: 1200px) {
+  .header {
+    padding: 1rem 14rem;
+  }
+}
 .header .nav-toggler {
   display: none;
 }
@@ -225,6 +230,9 @@ footer .legal {
   }
 }
 
+.background-shapes {
+  flex-basis: 100%;
+}
 @media only screen and (max-width: 576px) {
   .background-shapes {
     display: none;
@@ -1024,6 +1032,7 @@ footer .legal {
 .hero-area {
   padding: 8rem 20rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 }
@@ -1054,6 +1063,11 @@ footer .legal {
     flex-direction: row;
   }
 }
+@media only screen and (min-width: 1200px) {
+  .hero-area {
+    padding: 4rem 14rem;
+  }
+}
 .hero-area--contents {
   max-width: 36rem;
 }
@@ -1069,6 +1083,13 @@ footer .legal {
     font-size: 0.8rem;
     padding: 2px 5px;
     font-weight: 400;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .hero-area--contents h2 > span {
+    font-size: 1rem;
+    padding: 2px 5px;
+    font-weight: 600;
   }
 }
 .hero-area--title {
@@ -1090,6 +1111,11 @@ footer .legal {
     font-size: 2rem;
   }
 }
+@media only screen and (min-width: 1200px) {
+  .hero-area--title {
+    font-size: 2.5rem;
+  }
+}
 .hero-area--desc {
   margin-top: 2rem;
   font-size: 1.2rem;
@@ -1107,6 +1133,11 @@ footer .legal {
   }
 }
 @media only screen and (min-width: 992px) {
+  .hero-area--desc {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
   .hero-area--desc {
     font-size: 1rem;
   }
@@ -1142,6 +1173,11 @@ footer .legal {
     align-items: center;
   }
 }
+@media only screen and (min-width: 1200px) {
+  .about-area {
+    padding: 4rem 14rem;
+  }
+}
 .about-area--img {
   width: 44rem;
 }
@@ -1157,7 +1193,12 @@ footer .legal {
 }
 @media only screen and (min-width: 992px) {
   .about-area--img {
-    width: 20 rem;
+    width: 20rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .about-area--img {
+    width: 34rem;
   }
 }
 .about-area--desc {
@@ -1191,6 +1232,11 @@ footer .legal {
     font-size: 2rem;
   }
 }
+@media only screen and (min-width: 1200px) {
+  .about-area--desc h2 {
+    font-size: 2.5rem;
+  }
+}
 .about-area--desc p {
   line-height: 2;
   color: #cfcfcf;
@@ -1206,6 +1252,11 @@ footer .legal {
   }
 }
 @media only screen and (min-width: 992px) {
+  .about-area--desc p {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
   .about-area--desc p {
     font-size: 1rem;
   }
@@ -1227,6 +1278,11 @@ footer .legal {
 @media only screen and (min-width: 992px) {
   .roadmap {
     padding: 4rem 6rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .roadmap {
+    padding: 4rem 14rem;
   }
 }
 .roadmap--heading {
@@ -1375,6 +1431,11 @@ footer .legal {
     padding: 4rem 2rem;
   }
 }
+@media only screen and (min-width: 1200px) {
+  .courses {
+    padding: 4rem 14rem;
+  }
+}
 .courses--heading {
   text-align: center;
 }
@@ -1401,6 +1462,12 @@ footer .legal {
     padding-top: 0;
   }
 }
+@media only screen and (min-width: 1200px) {
+  .courses--heading h2 {
+    font-size: 2.5rem;
+    padding-top: 0;
+  }
+}
 .courses--heading p {
   color: #fff;
   font-size: 2rem;
@@ -1418,6 +1485,11 @@ footer .legal {
 @media only screen and (min-width: 992px) {
   .courses--heading p {
     font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .courses--heading p {
+    font-size: 1.5rem;
   }
 }
 .courses-cards {

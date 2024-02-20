@@ -3,6 +3,7 @@
 .hero-area {
   padding: 8rem 20rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 
@@ -31,6 +32,10 @@
     flex-direction: row;
   }
 
+  @include mixins.responsive(xl) {
+    padding: 4rem 14rem;
+  }
+
   &--contents {
     max-width: 36rem;
 
@@ -47,6 +52,14 @@
         font-size: 0.8rem;
         padding: 2px 5px;
         font-weight: 400;
+      }
+    }
+
+    @include mixins.responsive(xl) {
+      h2 > span {
+        font-size: 1rem;
+        padding: 2px 5px;
+        font-weight: 600;
       }
     }
   }
@@ -66,6 +79,10 @@
     @include mixins.responsive(lg) {
       font-size: 2rem;
     }
+
+    @include mixins.responsive(xl) {
+      font-size: 2.5rem;
+    }
   }
   &--desc {
     margin-top: 2rem;
@@ -82,6 +99,10 @@
     }
 
     @include mixins.responsive(lg) {
+      font-size: 0.9rem;
+    }
+
+    @include mixins.responsive(xl) {
       font-size: 1rem;
     }
   }

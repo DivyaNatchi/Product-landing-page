@@ -29,6 +29,10 @@
     align-items: center;
   }
 
+  @include mixins.responsive(xl) {
+    padding: 4rem 14rem;
+  }
+
   &--img {
     width: 44rem;
 
@@ -41,7 +45,11 @@
     }
 
     @include mixins.responsive(lg) {
-      width: 20 rem;
+      width: 20rem;
+    }
+
+    @include mixins.responsive(xl) {
+      width: 34rem;
     }
   }
   &--desc {
@@ -69,6 +77,10 @@
       @include mixins.responsive(lg) {
         font-size: 2rem;
       }
+
+      @include mixins.responsive(xl) {
+        font-size: 2.5rem;
+      }
     }
     p {
       line-height: 2;
@@ -82,6 +94,10 @@
         font-size: 0.8rem;
       }
       @include mixins.responsive(lg) {
+        font-size: 1rem;
+      }
+
+      @include mixins.responsive(xl) {
         font-size: 1rem;
       }
     }

@@ -21,6 +21,10 @@
     padding: 1rem 6rem;
   }
 
+  @include mixins.responsive(xl) {
+    padding: 1rem 14rem;
+  }
+
   .nav-toggler {
     display: none;
 

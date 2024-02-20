@@ -12,6 +12,10 @@
     padding: 4rem 2rem;
   }
 
+  @include mixins.responsive(lg) {
+    padding: 4rem 2rem;
+  }
+
   &-card {
     background-color: white;
     padding: 2rem 3rem;
@@ -40,6 +44,19 @@
       }
     }
 
+    @include mixins.responsive(lg) {
+      flex-direction: row;
+      button {
+        display: inline;
+        width: auto;
+      }
+    }
+
+    img {
+      @include mixins.responsive(lg) {
+        width: 30rem;
+      }
+    }
     &--content {
       flex-grow: 1;
 

@@ -22,6 +22,13 @@
     margin-top: 0;
   }
 
+  @include mixins.responsive(lg) {
+    padding: 4rem 6rem;
+    flex-direction: row;
+    margin-top: 0;
+    align-items: center;
+  }
+
   &--img {
     width: 44rem;
 
@@ -31,6 +38,10 @@
 
     @include mixins.responsive(sm) {
       width: 30rem;
+    }
+
+    @include mixins.responsive(lg) {
+      width: 20 rem;
     }
   }
   &--desc {
@@ -54,6 +65,10 @@
       @include mixins.responsive(sm) {
         font-size: 1.5rem;
       }
+
+      @include mixins.responsive(lg) {
+        font-size: 2rem;
+      }
     }
     p {
       line-height: 2;
@@ -65,6 +80,9 @@
 
       @include mixins.responsive(sm) {
         font-size: 0.8rem;
+      }
+      @include mixins.responsive(lg) {
+        font-size: 1rem;
       }
     }
   }

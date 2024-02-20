@@ -12,6 +12,10 @@
     padding: 4rem 2rem;
   }
 
+  @include mixins.responsive(lg) {
+    padding: 4rem 6rem;
+  }
+
   &--heading {
     text-align: center;
   }
@@ -28,6 +32,10 @@
     @include mixins.responsive(sm) {
       flex-direction: column;
     }
+
+    @include mixins.responsive(lg) {
+      flex-direction: row;
+    }
   }
 
   &--item {
@@ -38,6 +46,10 @@
     cursor: pointer;
     filter: grayscale(100%);
     transition: 500ms;
+
+    @include mixins.responsive(lg) {
+      padding: 0;
+    }
 
     &__img {
       position: relative;
@@ -65,10 +77,18 @@
       h5 {
         font-size: 1.5rem;
         font-weight: 600;
+
+        @include mixins.responsive(lg) {
+          font-size: 1rem;
+        }
       }
       p {
         color: func.theme-colors("gray");
         line-height: 1.5;
+      }
+
+      @include mixins.responsive(lg) {
+        font-size: 0.9rem;
       }
     }
 
@@ -98,11 +118,18 @@
         top: 100%;
         left: 40%;
       }
+
+      @include mixins.responsive(lg) {
+        content: "\f105";
+        top: 35%;
+        right: -35px;
+        left: auto;
+      }
     }
 
     &:hover:not(:last-child)::before {
       color: func.theme-colors();
-      right: -12%;
+      right: -32%;
     }
     &:hover &__img::after {
       animation: box-shape linear 5s infinite;

@@ -102,6 +102,11 @@ a {
     padding: 1rem 2rem;
   }
 }
+@media only screen and (min-width: 992px) {
+  .header {
+    padding: 1rem 6rem;
+  }
+}
 .header .nav-toggler {
   display: none;
 }
@@ -115,6 +120,11 @@ a {
   .header .nav-toggler {
     display: block;
     font-size: 1.3rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .header .nav-toggler {
+    display: none;
   }
 }
 .header span {
@@ -133,6 +143,11 @@ a {
 @media only screen and (min-width: 576px) {
   .header--menu {
     display: none;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .header--menu {
+    display: flex;
   }
 }
 .header--menu__item > a {
@@ -1033,6 +1048,12 @@ footer .legal {
     margin-top: 2rem;
   }
 }
+@media only screen and (min-width: 992px) {
+  .hero-area {
+    padding: 8rem 6rem;
+    flex-direction: row;
+  }
+}
 .hero-area--contents {
   max-width: 36rem;
 }
@@ -1064,6 +1085,11 @@ footer .legal {
     font-size: 1.5rem;
   }
 }
+@media only screen and (min-width: 992px) {
+  .hero-area--title {
+    font-size: 2rem;
+  }
+}
 .hero-area--desc {
   margin-top: 2rem;
   font-size: 1.2rem;
@@ -1078,6 +1104,11 @@ footer .legal {
 @media only screen and (min-width: 576px) {
   .hero-area--desc {
     font-size: 0.8rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .hero-area--desc {
+    font-size: 1rem;
   }
 }
 
@@ -1103,6 +1134,14 @@ footer .legal {
     margin-top: 0;
   }
 }
+@media only screen and (min-width: 992px) {
+  .about-area {
+    padding: 4rem 6rem;
+    flex-direction: row;
+    margin-top: 0;
+    align-items: center;
+  }
+}
 .about-area--img {
   width: 44rem;
 }
@@ -1114,6 +1153,11 @@ footer .legal {
 @media only screen and (min-width: 576px) {
   .about-area--img {
     width: 30rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .about-area--img {
+    width: 20 rem;
   }
 }
 .about-area--desc {
@@ -1142,6 +1186,11 @@ footer .legal {
     font-size: 1.5rem;
   }
 }
+@media only screen and (min-width: 992px) {
+  .about-area--desc h2 {
+    font-size: 2rem;
+  }
+}
 .about-area--desc p {
   line-height: 2;
   color: #cfcfcf;
@@ -1156,6 +1205,11 @@ footer .legal {
     font-size: 0.8rem;
   }
 }
+@media only screen and (min-width: 992px) {
+  .about-area--desc p {
+    font-size: 1rem;
+  }
+}
 
 .roadmap {
   padding: 8rem 20rem;
@@ -1168,6 +1222,11 @@ footer .legal {
 @media only screen and (min-width: 576px) {
   .roadmap {
     padding: 4rem 2rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .roadmap {
+    padding: 4rem 6rem;
   }
 }
 .roadmap--heading {
@@ -1189,6 +1248,11 @@ footer .legal {
     flex-direction: column;
   }
 }
+@media only screen and (min-width: 992px) {
+  .roadmap--items {
+    flex-direction: row;
+  }
+}
 .roadmap--item {
   padding: 3rem;
   text-align: center;
@@ -1197,6 +1261,11 @@ footer .legal {
   cursor: pointer;
   filter: grayscale(100%);
   transition: 500ms;
+}
+@media only screen and (min-width: 992px) {
+  .roadmap--item {
+    padding: 0;
+  }
 }
 .roadmap--item__img {
   position: relative;
@@ -1222,9 +1291,19 @@ footer .legal {
   font-size: 1.5rem;
   font-weight: 600;
 }
+@media only screen and (min-width: 992px) {
+  .roadmap--item__content h5 {
+    font-size: 1rem;
+  }
+}
 .roadmap--item__content p {
   color: #808080;
   line-height: 1.5;
+}
+@media only screen and (min-width: 992px) {
+  .roadmap--item__content {
+    font-size: 0.9rem;
+  }
 }
 .roadmap--item:not(:last-child)::before {
   position: absolute;
@@ -1255,9 +1334,17 @@ footer .legal {
     left: 40%;
   }
 }
+@media only screen and (min-width: 992px) {
+  .roadmap--item:not(:last-child)::before {
+    content: "\f105";
+    top: 35%;
+    right: -35px;
+    left: auto;
+  }
+}
 .roadmap--item:hover:not(:last-child)::before {
   color: #3f43fd;
-  right: -12%;
+  right: -32%;
 }
 .roadmap--item:hover .roadmap--item__img::after {
   animation: box-shape linear 5s infinite;
@@ -1283,6 +1370,11 @@ footer .legal {
     padding: 4rem 2rem;
   }
 }
+@media only screen and (min-width: 992px) {
+  .courses {
+    padding: 4rem 2rem;
+  }
+}
 .courses--heading {
   text-align: center;
 }
@@ -1303,6 +1395,12 @@ footer .legal {
     padding-top: 0;
   }
 }
+@media only screen and (min-width: 992px) {
+  .courses--heading h2 {
+    font-size: 2rem;
+    padding-top: 0;
+  }
+}
 .courses--heading p {
   color: #fff;
   font-size: 2rem;
@@ -1315,6 +1413,11 @@ footer .legal {
 @media only screen and (min-width: 576px) {
   .courses--heading p {
     font-size: 0.8rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .courses--heading p {
+    font-size: 1rem;
   }
 }
 .courses-cards {
@@ -1332,18 +1435,48 @@ footer .legal {
     align-items: center;
   }
 }
+@media only screen and (min-width: 992px) {
+  .courses-cards {
+    flex-direction: row;
+  }
+}
 .courses-card {
   background-color: #fff;
   max-width: 380px;
   border-radius: 10px;
   overflow: hidden;
 }
+@media only screen and (min-width: 992px) {
+  .courses-card {
+    max-width: 300px;
+    min-height: 585px;
+  }
+}
 .courses-card--img {
   width: 380px;
 }
+@media only screen and (min-width: 992px) {
+  .courses-card--img {
+    max-width: 300px;
+  }
+}
 .courses-card--body h4 {
-  color: #020712;
   font-size: 1.5rem;
+}
+@media only screen and (max-width: 576px) {
+  .courses-card--body h4 {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .courses-card--body h4 {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .courses-card--body h4 {
+    font-size: 1.2rem;
+  }
 }
 .courses-card--body p {
   color: #808080;
@@ -1391,6 +1524,11 @@ footer .legal {
     padding: 4rem 2rem;
   }
 }
+@media only screen and (min-width: 992px) {
+  .contact {
+    padding: 4rem 2rem;
+  }
+}
 .contact-card {
   background-color: white;
   padding: 2rem 3rem;
@@ -1419,6 +1557,20 @@ footer .legal {
   .contact-card button {
     display: block;
     width: 100%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .contact-card {
+    flex-direction: row;
+  }
+  .contact-card button {
+    display: inline;
+    width: auto;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .contact-card img {
+    width: 30rem;
   }
 }
 .contact-card--content {

@@ -17,6 +17,10 @@
     padding: 1rem 2rem;
   }
 
+  @include mixins.responsive(lg) {
+    padding: 1rem 6rem;
+  }
+
   .nav-toggler {
     display: none;
 
@@ -28,6 +32,10 @@
     @include mixins.responsive(sm) {
       display: block;
       font-size: 1.3rem;
+    }
+
+    @include mixins.responsive(lg) {
+      display: none;
     }
   }
 
@@ -46,6 +54,10 @@
 
     @include mixins.responsive(sm) {
       display: none;
+    }
+
+    @include mixins.responsive(lg) {
+      display: flex;
     }
 
     &__item > a {

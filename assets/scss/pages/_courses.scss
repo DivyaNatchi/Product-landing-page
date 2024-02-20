@@ -14,6 +14,10 @@
     padding: 4rem 2rem;
   }
 
+  @include mixins.responsive(lg) {
+    padding: 4rem 2rem;
+  }
+
   &--heading {
     text-align: center;
     h2 {
@@ -30,6 +34,11 @@
         font-size: 1.5rem;
         padding-top: 0;
       }
+
+      @include mixins.responsive(lg) {
+        font-size: 2rem;
+        padding-top: 0;
+      }
     }
     p {
       color: func.theme-colors("white");
@@ -40,6 +49,10 @@
 
       @include mixins.responsive(sm) {
         font-size: 0.8rem;
+      }
+
+      @include mixins.responsive(lg) {
+        font-size: 1rem;
       }
     }
   }
@@ -55,6 +68,10 @@
       flex-direction: column;
       align-items: center;
     }
+
+    @include mixins.responsive(lg) {
+      flex-direction: row;
+    }
   }
   &-card {
     background-color: func.theme-colors("white");
@@ -62,14 +79,32 @@
     border-radius: 10px;
     overflow: hidden;
 
+    @include mixins.responsive(lg) {
+      max-width: 300px;
+      min-height: 585px;
+    }
+
     &--img {
       width: 380px;
+
+      @include mixins.responsive(lg) {
+        max-width: 300px;
+      }
     }
 
     &--body {
       h4 {
-        color: func.theme-colors("dark");
         font-size: 1.5rem;
+
+        @include mixins.responsive(xs) {
+          font-size: 1.3rem;
+        }
+        @include mixins.responsive(sm) {
+          font-size: 1.3rem;
+        }
+        @include mixins.responsive(lg) {
+          font-size: 1.2rem;
+        }
       }
       p {
         color: func.theme-colors("gray");

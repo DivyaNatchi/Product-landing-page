@@ -22,6 +22,10 @@
     padding: 4rem 14rem;
   }
 
+  @include mixins.responsive(xxl) {
+    padding: 8rem 10rem;
+  }
+
   &--heading {
     text-align: center;
     h2 {
@@ -48,6 +52,11 @@
         font-size: 2.5rem;
         padding-top: 0;
       }
+
+      @include mixins.responsive(xxl) {
+        font-size: 3rem;
+        padding-top: 0;
+      }
     }
     p {
       color: func.theme-colors("white");
@@ -66,6 +75,10 @@
 
       @include mixins.responsive(xl) {
         font-size: 1.5rem;
+      }
+
+      @include mixins.responsive(xxl) {
+        font-size: 2rem;
       }
     }
   }
@@ -97,11 +110,20 @@
       min-height: 585px;
     }
 
+    @include mixins.responsive(xxl) {
+      max-width: 380px;
+      min-height: 585px;
+    }
+
     &--img {
       width: 380px;
 
       @include mixins.responsive(lg) {
         max-width: 300px;
+      }
+
+      @include mixins.responsive(xxl) {
+        max-width: 380px;
       }
     }
 
@@ -117,6 +139,9 @@
         }
         @include mixins.responsive(lg) {
           font-size: 1.2rem;
+        }
+        @include mixins.responsive(xxl) {
+          font-size: 1.5rem;
         }
       }
       p {

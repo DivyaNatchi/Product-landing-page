@@ -3,7 +3,7 @@
 .hero-area {
   padding: 8rem 20rem;
   display: flex;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 
@@ -21,10 +21,10 @@
     padding: 4rem 2rem;
     flex-direction: column;
 
-    img {
-      width: 25rem;
-      margin-top: 2rem;
-    }
+    // img {
+    //   width: 25rem;
+    //   margin-top: 2rem;
+    // }
   }
 
   @include mixins.responsive(lg) {
@@ -34,6 +34,16 @@
 
   @include mixins.responsive(xl) {
     padding: 4rem 14rem;
+  }
+
+  @include mixins.responsive(xxl) {
+    padding: 8rem 10rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  img {
+    width: 25rem;
   }
 
   &--contents {
@@ -62,6 +72,13 @@
         font-weight: 600;
       }
     }
+
+    @include mixins.responsive(xxl) {
+      h2 > span {
+        font-size: 1.3rem;
+        padding: 3px 6px;
+      }
+    }
   }
 
   &--title {
@@ -82,6 +99,10 @@
 
     @include mixins.responsive(xl) {
       font-size: 2.5rem;
+    }
+
+    @include mixins.responsive(xxl) {
+      font-size: 3rem;
     }
   }
   &--desc {
@@ -104,6 +125,10 @@
 
     @include mixins.responsive(xl) {
       font-size: 1rem;
+    }
+
+    @include mixins.responsive(xxl) {
+      font-size: 1.2rem;
     }
   }
 }

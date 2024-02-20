@@ -33,6 +33,10 @@
     padding: 4rem 14rem;
   }
 
+  @include mixins.responsive(xxl) {
+    padding: 8rem 10rem;
+  }
+
   &--img {
     width: 44rem;
 
@@ -50,6 +54,10 @@
 
     @include mixins.responsive(xl) {
       width: 34rem;
+    }
+
+    @include mixins.responsive(xxl) {
+      width: 44rem;
     }
   }
   &--desc {
@@ -81,6 +89,10 @@
       @include mixins.responsive(xl) {
         font-size: 2.5rem;
       }
+
+      @include mixins.responsive(xxl) {
+        font-size: 3rem;
+      }
     }
     p {
       line-height: 2;
@@ -99,6 +111,10 @@
 
       @include mixins.responsive(xl) {
         font-size: 1rem;
+      }
+
+      @include mixins.responsive(xxl) {
+        font-size: 1.2rem;
       }
     }
   }

@@ -17,6 +17,10 @@ footer {
     @include mixins.responsive(sm) {
       font-size: 1rem;
     }
+
+    @include mixins.responsive(xxl) {
+      font-size: 1.2rem;
+    }
   }
   p {
     color: #e8e8e8;
@@ -27,6 +31,10 @@ footer {
 
     @include mixins.responsive(sm) {
       font-size: 0.8rem;
+    }
+
+    @include mixins.responsive(sm) {
+      font-size: 1rem;
     }
   }
 
@@ -58,6 +66,10 @@ footer {
 
     @include mixins.responsive(sm) {
       font-size: 0.7rem;
+    }
+
+    @include mixins.responsive(xxl) {
+      font-size: 0.9rem;
     }
   }
 }

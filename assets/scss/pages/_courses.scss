@@ -23,7 +23,7 @@
   }
 
   @include mixins.responsive(xxl) {
-    padding: 8rem 10rem;
+    padding: 8rem 8rem;
   }
 
   &--heading {
@@ -109,10 +109,14 @@
       max-width: 300px;
       min-height: 585px;
     }
+    @include mixins.responsive(xl) {
+      max-width: 300px;
+      min-height: 585px;
+    }
 
     @include mixins.responsive(xxl) {
       max-width: 380px;
-      min-height: 585px;
+      min-height: 620px;
     }
 
     &--img {

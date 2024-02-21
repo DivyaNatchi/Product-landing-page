@@ -1,3 +1,5 @@
+@use "../abstract/functions" as func;
+
 @mixin responsive($breakpoint) {
   // X-Small devices (portrait phones, less than 576px)
   @if ($breakpoint == xs) {
@@ -38,6 +40,35 @@
   @else if ($breakpoint == xxl) {
     @media only screen and (min-width: 1400px) {
       @content;
+    }
+  }
+}
+
+@mixin toggle-menu() {
+  position: fixed;
+  background-color: #0080ff;
+  top: -100px;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  z-index: 1;
+  transition: 500;
+
+  &.show {
+    display: block;
+    top: 60px;
+  }
+
+  & li {
+    padding: 2rem;
+
+    a {
+      color: #fff;
+
+      &.active {
+        color: func.theme-colors("dark");
+      }
     }
   }
 }

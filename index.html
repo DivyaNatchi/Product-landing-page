@@ -31,16 +31,17 @@
       </div>
       <div>
         <div class="nav-toggler">
-          <i class="fa-solid fa-bars"></i>
+          <i class="nav-icon fa-solid fa-bars"></i>
+          <i class="nav-icon fa-solid fa-close hidden"></i>
         </div>
         <ul class="header--menu text-uppercase">
           <li class="header--menu__item">
-            <a href="#" class="active">Home</a>
+            <a href="#home" class="active">Home</a>
           </li>
-          <li class="header--menu__item"><a href="#">About</a></li>
-          <li class="header--menu__item"><a href="#">Roadmap</a></li>
-          <li class="header--menu__item"><a href="#">courses</a></li>
-          <li><a href="#" class="btn-primary">contact us</a></li>
+          <li class="header--menu__item"><a href="#about">About</a></li>
+          <li class="header--menu__item"><a href="#roadmap">Roadmap</a></li>
+          <li class="header--menu__item"><a href="#courses">courses</a></li>
+          <li><a href="#contact" class="btn-primary">contact us</a></li>
         </ul>
       </div>
     </header>
@@ -49,7 +50,7 @@
     <!-- ========== Start content section ========== -->
     <main>
       <!-- ========== Start hero area section ========== -->
-      <section class="hero-area">
+      <section id="home" class="hero-area">
         <div class="background-shapes">
           <div class="box1"></div>
           <div class="box2"></div>
@@ -98,7 +99,7 @@
 
       <!-- ========== Start About area section ========== -->
 
-      <section class="about-area space-x-4 space-y-4">
+      <section id="about" class="about-area space-x-4 space-y-4">
         <div>
           <img
             src="./assets/img/web-development-illustration.png"
@@ -119,7 +120,7 @@
       <!-- ========== End About area section ========== -->
 
       <!-- ========== Start roadmap section ========== -->
-      <section class="roadmap">
+      <section id="roadmap" class="roadmap">
         <div class="roadmap--heading">
           <h2>Roadmap to Expertise</h2>
           <p>Start it slow, finish it with style</p>
@@ -163,7 +164,7 @@
       </section>
       <!-- ========== End roadmap section ========== -->
       <!-- ========== Start courses sections ========== -->
-      <section class="courses">
+      <section id="courses" class="courses">
         <div class="courses--heading space-y-1 mb-3">
           <h2>Free Courses to Enroll</h2>
           <p>Start from beginning, no pre-requesties required.</p>
@@ -248,7 +249,7 @@
       </section>
       <!-- ========== End courses sections ========== -->
       <!-- ========== Start contact info section ========== -->
-      <section class="contact">
+      <section id="contact" class="contact">
         <div class="contact-card">
           <form
             action="#"
@@ -348,5 +349,9 @@
     <!-- ========== Start footer section ========== -->
     <footer></footer>
     <!-- ========== End footer section ========== -->
+
+    <!-- ========== Start script ========== -->
+    <script src="./assets/js/main.js"></script>
+    <!-- ========== End script ========== -->
   </body>
 </html>

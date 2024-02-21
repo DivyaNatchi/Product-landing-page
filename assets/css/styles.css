@@ -4,6 +4,8 @@
   margin: 0px;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  scroll-margin-top: 50px;
 }
 
 a {
@@ -30,6 +32,10 @@ a {
 .img-responsive {
   width: 100%;
   height: auto;
+}
+
+.hidden {
+  display: none;
 }
 
 .btn, .btn-outlined, .btn-primary {
@@ -114,7 +120,7 @@ a {
 }
 @media only screen and (min-width: 1400px) {
   .header {
-    padding: 1rem 20rem;
+    padding: 1rem 10rem;
   }
 }
 .header .nav-toggler {
@@ -148,6 +154,28 @@ a {
 @media only screen and (max-width: 576px) {
   .header--menu {
     display: none;
+    position: fixed;
+    background-color: #0080ff;
+    top: -100px;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    z-index: 1;
+    transition: 500;
+  }
+  .header--menu.show {
+    display: block;
+    top: 60px;
+  }
+  .header--menu li {
+    padding: 2rem;
+  }
+  .header--menu li a {
+    color: #fff;
+  }
+  .header--menu li a.active {
+    color: #020712;
   }
 }
 @media only screen and (min-width: 576px) {
@@ -172,6 +200,16 @@ a {
 }
 .header--menu__item > a.active {
   color: #3f43fd;
+}
+.header.navbar-fixed {
+  position: fixed;
+  top: -1px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 1px 1px 2px 0 #e6e6e6;
+  z-index: 999;
 }
 
 footer {
@@ -1223,7 +1261,7 @@ footer .legal {
 }
 @media only screen and (min-width: 1400px) {
   .about-area {
-    padding: 8rem 10rem;
+    padding: 8rem 8rem;
   }
 }
 .about-area--img {
@@ -1350,7 +1388,7 @@ footer .legal {
 }
 @media only screen and (min-width: 1400px) {
   .roadmap {
-    padding: 8rem 10rem;
+    padding: 8rem 8rem;
   }
 }
 .roadmap--heading {
@@ -1516,7 +1554,7 @@ footer .legal {
 }
 @media only screen and (min-width: 1400px) {
   .courses {
-    padding: 8rem 10rem;
+    padding: 8rem 8rem;
   }
 }
 .courses--heading {
@@ -1618,10 +1656,16 @@ footer .legal {
     min-height: 585px;
   }
 }
+@media only screen and (min-width: 1200px) {
+  .courses-card {
+    max-width: 300px;
+    min-height: 585px;
+  }
+}
 @media only screen and (min-width: 1400px) {
   .courses-card {
     max-width: 380px;
-    min-height: 585px;
+    min-height: 620px;
   }
 }
 .courses-card--img {
@@ -1713,7 +1757,7 @@ footer .legal {
 }
 @media only screen and (min-width: 1400px) {
   .contact {
-    padding: 8rem 10rem;
+    padding: 8rem 8rem;
   }
 }
 .contact-card {
